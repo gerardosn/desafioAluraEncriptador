@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: "inter", sans-serif;
+    color: #0A3871;
+    margin: 10px;
+    background-color: #F3F5FC;
+     width: max(100%, 375px); /*utiliza el valor más grande */
+     width: min(100%, 375px);
+    height: auto;
+
+
+  }
+  
+/*header*/
+.contenedor-header {
+    display: flex;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+   /* border: 2px solid #000; /* Borde negro de 2px */
+    align-items: center;
+    
+  }
+  .contenedor-header-div1, .contenedor-header-div3{
+    width: 100%;
+  }
+  .contenedor-header-div3{
+    text-align: right;
+  }
+  /*header fin*/
+
+  /*main-*/
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #textoEntrada {
+    font-family: "inter", sans-serif;
+  background-color: #F3F5FC; /* Color de fondo gris claro */
+  color: #0A3871; /* Color de texto negro */
+  font-size: 32px;
+  /*padding: 10px; /* Añade espacio entre el texto y el borde */
+  /*border: 1px solid #ccc; /* Borde gris claro */
+  width:345px;
+  height: 300px;
+}
+span {
+  color: #495057;
+}
+
+.main-div2 {
+  /*border: 1px solid #ccc; /* Borde gris claro */
+  display: flex;
+  flex-direction: column;
+}
+.btn-encriptar {
+  margin: 12px 0px;
+  background-color: #0A3871; /* Azul */
+  color: #fff; /* Blanco */
+  display: block; /* Ocupa todo el ancho disponible */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 24px 0px; /* Espacio entre el texto y los bordes */
+  font-size: 16px; /* Tamaño de la fuente */
+  text-align: center; /* Alinea el texto al centro */
+  text-decoration: none; /* Elimina la decoración del texto */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 25px; /* Esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor a mano al pasar el mouse */
+}
+
+.btn-desencriptar, .btn-copiar {
+  background-color: white; /* Azul */
+  color: #0A3871; /* Blanco */
+  display: block; /* Ocupa todo el ancho disponible */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 24px 0px; /* Espacio entre el texto y los bordes */
+  margin: 10px 0px 0px 0px;
+  font-size: 16px; /* Tamaño de la fuente */
+  text-align: center; /* Alinea el texto al centro */
+  text-decoration: none; /* Elimina la decoración del texto */
+  border: solid; /* Elimina el borde predeterminado */
+  border-radius: 25px; /* Esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor a mano al pasar el mouse */
+}
+
+.main-div3{
+  width: min(100%, 327px);
+
+top: 707px;
+left: 24px;
+padding: 32px 0px 0px 0px;
+gap: 32px;
+border-radius: 32px ;
+opacity: 0px;
+background: #FFFFFF;
+box-shadow: 0px 24px 32px -8px #00000014;
+margin-top: 30px;
+}
+.text-resultado{
+  width: min(100%, 263px);
+ 
+  gap: 16px;
+  opacity: 0px;
+  margin-left: 30px;
+
+  text-align: center;
+
+}
+  /*main-fin*/
+  
+  
+  footer {
+    color: #F3F5FC;
+    /*border: 2px solid #000; /* Borde negro de 2px */
+    text-align: center;
+    size: 8px;
+  }
+  
+  /* Estilos para dispositivos móviles (hasta 768px) */
+  /* @media (max-width: 768px) {
+   
+  
+    .div1, .div2, .div3 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  } */
+  
+  /* Estilos para tabletas (entre 768px y 1024px) */
+  /* @media (min-width: 768px) and (max-width: 1024px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .div1, .div2 {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  
+    .div3 {
+      width: 100%;
+    }
+  } */
+  
+  /* Estilos para desktop (más de 1024px) */
+  /* @media (min-width: 1024px) {
+    main {
+      display: flex;
+    }
+  
+    .div1, .div2 {
+      width: 40%;
+      margin-right: 20px;
+    }
+  
+    .div3 {
+      width: 40%;
+    }
+  } 
+    
+width: Fill (263px)px;
+height: Hug (122px)px;
+gap: 16px;
+opacity: 0px;
+*/
+  
