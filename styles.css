@@ -8,9 +8,15 @@
     font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
     background-color: #F3F5FC;
   }
-  #txtIn{
+  #txtIn {
     width: 100%;
     height: 48px;
+    border: 0;
+    background-color: #F3F5FC;
+    resize: none;
+  }
+  #txtIn:focus {
+    outline: none;
   }
   .contAdvertencia{
     display: flex;
