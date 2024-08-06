@@ -3,47 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Alura: Encriptar.</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Desafio Alura: Encriptador.</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="contenedor-header">
-            <div class="contenedor-header-div1"> <img src="img/logo-alura.svg"> </div>
-            <div class="contenedor-header-div2"></div>
-            <div class="contenedor-header-div3"> <img src="img/icono-menu.svg" > </div>
-          </div>
-      </header>
-    
-      <main>
-        <form>
-        <div class="main-div1">
-        <textarea id="textoEntrada" name="textoEntrada" placeholder="Ingrese el texto..."></textarea>
-        </div>
-  
-        <img src="img/signo-exclamacion.svg">
-          <span>Solo letras minusculas y sin acentos</span>
-        <div class="main-div2">
-          <div class="btn-encriptar" onclick="encriptar()">Encriptar</div>
-          <div class="btn-desencriptar" onclick="desencriptar()">Desencriptar</div>
-        </div> </form>
-        <div class="main-div3">
-          <div class="text-resultado" id="resultado">
-            <h1>Ningún mensaje fue encontrado</h1>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-            <!-- <div class="btn-copiar">Copiar</div> -->
-          </div>
-        
-        </div>
-      </main>
-    
-      <footer>
-        <p>&copy; Todos los derechos reservados</p>
-        
-      </footer>
-      <script src="script.js"></script>
+    <header><img src="img/logo-alura.svg" alt="logo-alura"></header> 
+    <main>
+     <textarea name="txtIn" id="txtIn" placeholder="Ingrese el texto aqui" maxlength="200"></textarea>
+     <div class="contAdvertencia">
+     <img src="img/signo-exclamacion.svg" alt="!"><p>Solo letras minúsculas y sin acentos</p>
+     </div>
+     <div class="contBtnes">
+     <button name="encriptar" id="encriptar" class="btnEncriptar" onclick="encriptar()">Encriptar</button>
+     <button name="desencriptar" id="desencriptar" class="btndesencriptar" onclick="desencriptar()">Desencriptar</button>    
+    </div>
+    </main>
+    <article>
+        <h1>Ningún mensaje fue encontrado</h1>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+    </article>
+    <footer>&copy; Sena, Gerardo - Alura</footer> 
 </body>
 </html>
