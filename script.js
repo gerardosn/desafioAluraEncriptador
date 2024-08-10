@@ -1,23 +1,28 @@
 function codificarTexto() {
     let texto = document.getElementById("txtIn").value;
+
     let textoCifrado = codificar(texto);
-    document.getElementById("h1Resultado").remove();
+    console.log("Estoy aca ", texto, " ",textoCifrado);//bandera
+    
     document.getElementById("resultado").textContent = textoCifrado;
     document.getElementById("contBtnCopiar").innerHTML= `
     <button class="btndesencriptar" onclick="copiarTexto()">Copiar</button>
     `;
+    document.getElementById("h1Resultado").remove();
 }
 function codificar(textIn) {
+
     // Creamos una variable para almacenar el texto cifrado
     let txtEncrypted = "";
-  
+
     // Recorremos cada caracter del texto original
     for (let i = 0; i < textIn.length; i++) {
-      let caracter = textIn[i].toLowerCase(); // Convertimos a minúscula para una comparación más sencilla
-  
+      let caracter = textIn[i]; // Convertimos a minúscula para una comparación más sencilla
+
       switch (caracter) {
         case "a":
           txtEncrypted += "ai";
+
           break;
         case "e":
           txtEncrypted += "enter";
@@ -33,7 +38,8 @@ function codificar(textIn) {
           break;
         default:
           txtEncrypted += caracter; // Si no es una vocal a, e o i, se agrega tal cual
-      }
+
+        }
     }  
     return txtEncrypted;
 }
