@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Alura: Encriptador.</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header><img src="img/logo-alura.svg" alt="logo-alura"></header> 
@@ -14,14 +18,17 @@
      <img src="img/signo-exclamacion.svg" alt="!"><p>Solo letras minúsculas y sin acentos</p>
      </div>
      <div class="contBtnes">
-     <button name="encriptar" id="encriptar" class="btnEncriptar" onclick="encriptar()">Encriptar</button>
-     <button name="desencriptar" id="desencriptar" class="btndesencriptar" onclick="desencriptar()">Desencriptar</button>    
+     <button class="btnEncriptar" onclick="codificarTexto()">Encriptar</button>
+     <button class="btndesencriptar" onclick="decodificarTexto()">Desencriptar</button>    
     </div>
     </main>
     <article>
-        <h1>Ningún mensaje fue encontrado</h1>
-        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        <h1 id="h1Resultado">Ningún mensaje fue encontrado</h1>
+        <p id="resultado">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <!-- <button class="btndesencriptar" onclick="copiarTexto()">Copiar</button>     -->
+        <div id="contBtnCopiar"></div>
     </article>
     <footer>&copy; Sena, Gerardo - Alura</footer> 
+    <script src="script.js"></script>
 </body>
 </html>

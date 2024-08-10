@@ -70,7 +70,6 @@ const tablaSustitucion = {
         const textoOriginal = decodificar(numeros);
         
         document.getElementById("resultado").innerHTML = `
-          
           <p>${textoOriginal}</p>
           <div class="btn-copiar" onclick="copiarTexto()">Copiar</div>
         `;
