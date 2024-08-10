@@ -10,6 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icono-alura.ico" type="image/x-icon">
+   
+   <script>
+        function obtenerTamanoPantalla() {
+            const ancho = window.innerWidth;
+            const alto = window.innerHeight;
+            document.getElementById('tamano').innerText = `Ancho: ${ancho}px, Alto: ${alto}px`;
+        }
+    </script>
 </head>
 <body>
     <header><img src="img/logo-alura.svg" alt="logo-alura"></header> 
@@ -29,7 +37,11 @@
         <!-- <button class="btndesencriptar" onclick="copiarTexto()">Copiar</button>     -->
         <div id="contBtnCopiar"></div>
     </article>
-    <footer>&copy; Sena, Gerardo - Alura</footer> 
+    <footer>&copy; Sena, Gerardo - Alura
+    <br>
+    <button style="font-size: 8px;" onclick="obtenerTamanoPantalla()">Mostrar Tamaño de Pantalla</button>
+    <p id="tamano" style="font-size: 8px;"></p>
+    </footer> 
     <script src="script.js"></script>
 </body>
 </html>
