@@ -2,13 +2,14 @@ function codificarTexto() {
     let texto = document.getElementById("txtIn").value;
 
     let textoCifrado = codificar(texto);
-    console.log("Estoy aca ", texto, " ",textoCifrado);//bandera
-    
+    //console.log("Estoy aca ", texto, " ",textoCifrado);//bandera
+
     document.getElementById("resultado").textContent = textoCifrado;
     document.getElementById("contBtnCopiar").innerHTML= `
     <button class="btndesencriptar" onclick="copiarTexto()">Copiar</button>
     `;
     document.getElementById("h1Resultado").remove();
+    document.getElementById("imgMuneco").remove();
 }
 function codificar(textIn) {
 
@@ -65,10 +66,11 @@ function codificar(textIn) {
     let texto = document.getElementById("txtIn").value;
     let textoCifrado = decodificar(texto);
     document.getElementById("resultado").textContent = textoCifrado;
-    document.getElementById("h1Resultado").remove();
     document.getElementById("contBtnCopiar").innerHTML= `
     <button class="btndesencriptar" onclick="copiarTexto()">Copiar</button>
     `;
+    document.getElementById("h1Resultado").remove();
+    document.getElementById("imgMuneco").remove();
 }
 function decodificar(textIn) {
     let txtDecrypted = textIn.replace(/ai/g, 'a')
