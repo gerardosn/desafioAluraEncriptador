@@ -51,7 +51,7 @@
   .btnEncriptar:active{
     background-color: #50749f;
   }
-  .btndesencriptar{    
+  .btndesencriptar, .btnCopiar{    
     height: 67px;
     padding: 24px;
     border-radius: 24px;
@@ -62,7 +62,7 @@
     transition: background-color 0.1s ease-in-out; /* Transición */
     width: 100%;
   }
-  .btndesencriptar:active{
+  .btndesencriptar:active, .btnCopiar:active{
     background-color: #50749f;
   }
   article{

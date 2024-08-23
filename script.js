@@ -1,15 +1,18 @@
 function codificarTexto() {
-    let texto = document.getElementById("txtIn").value;
+  let elemento = document.querySelector(".btnCopiar");
+      if (elemento == null) {
+      document.getElementById("h1Resultado").remove();
+      document.getElementById("imgMuneco").remove();
+      }
 
+    let texto = document.getElementById("txtIn").value;
     let textoCifrado = codificar(texto);
     //console.log("Estoy aca ", texto, " ",textoCifrado);//bandera
 
     document.getElementById("resultado").textContent = textoCifrado;
     document.getElementById("contBtnCopiar").innerHTML= `
-    <button class="btndesencriptar" onclick="copiarTexto()">Copiar</button>
+    <button class="btnCopiar" onclick="copiarTexto()">Copiar</button>
     `;
-    document.getElementById("h1Resultado").remove();
-    document.getElementById("imgMuneco").remove();
 }
 function codificar(textIn) {
 
@@ -63,14 +66,19 @@ function codificar(textIn) {
   }
 
   function decodificarTexto() {
+    let elemento = document.querySelector(".btnCopiar");
+      if (elemento == null) {
+      document.getElementById("h1Resultado").remove();
+      document.getElementById("imgMuneco").remove();
+      }
+
     let texto = document.getElementById("txtIn").value;
     let textoCifrado = decodificar(texto);
     document.getElementById("resultado").textContent = textoCifrado;
     document.getElementById("contBtnCopiar").innerHTML= `
-    <button class="btndesencriptar" onclick="copiarTexto()">Copiar</button>
+    <button class="btnCopiar" onclick="copiarTexto()">Copiar</button>
     `;
-    document.getElementById("h1Resultado").remove();
-    document.getElementById("imgMuneco").remove();
+    
 }
 function decodificar(textIn) {
     let txtDecrypted = textIn.replace(/ai/g, 'a')
